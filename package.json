@@ -10,14 +10,21 @@
       "require": "./dist/index.umd.js"
     }
   },
-  "files": ["dist"],
-  "keywords": ["svg", "graphics", "vector", "vanilla"],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "svg",
+    "graphics",
+    "vector",
+    "vanilla"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.esm.js && esbuild src/index.js --bundle --minify --format=iife --global-name=SVG --outfile=dist/index.umd.js",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "esbuild": "^0.23.0"
+    "esbuild": "^0.23.1"
   }
 }
