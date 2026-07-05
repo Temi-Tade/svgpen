@@ -1,13 +1,14 @@
 const NAMESPACE = "http://www.w3.org/2000/svg";
 
 export class SVGRoot {
-    constructor(parent = document.querySelector("body"), w, h, bg) {
+    constructor(parent = document.querySelector("body"), w, h, bg="#fff") {
         this.width = w;
         this.height = h;
         const svg = document.createElementNS(NAMESPACE, "svg");
         this.element = svg;
         svg.setAttribute("width", w);
         svg.setAttribute("height", h);
+        svg.setAttribute("style", `background-color: ${bg}`);
         parent.appendChild(svg);
             
         //return svg;

@@ -26,5 +26,13 @@
   },
   "devDependencies": {
     "esbuild": "^0.23.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temi-Tade/svgpen.git"
+  },
+  "homepage": "https://github.com/Temi-Tade/svgpen#readme",
+  "bugs": {
+    "url": "https://github.com/Temi-Tade/svgpen/issues"
   }
 }
